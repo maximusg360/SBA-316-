@@ -1,0 +1,51 @@
+body {
+    background-image: url("https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg");
+    background-size: cover;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+  }
+  .Mike-Tyson {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  color: white;
+  flex-direction: row;
+  }
+
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 1 24%;
+    
+}
+
+img{
+  width: 400px;
+  height: 400;
+}
+
+p {
+  color: aliceblue;
+}
+
+h2 {
+  color: aliceblue;
+}
+
+.fighter-name{
+  font-size: 50px;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #abbaba;
+  color: #000;
+}
