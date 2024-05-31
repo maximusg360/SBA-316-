@@ -16,6 +16,12 @@ console.log(small);
 
 const body = document.getElementById("body");
 console.log(body);
+let weightclass = document.querySelectorAll('#weight-class');
+console.log(weightclass[0])
+
+for (let i = 0; i < weightclass.length; i++){
+  weightclass[0].style.color ="blue"
+}
 
 body.appendChild(myFooter);
 myFooter.appendChild(small);
@@ -23,9 +29,26 @@ myFooter.appendChild(small);
 const button = document.getElementById("alert");
 console.log(button);
 
-button.addEventListener("click", ()=>{
+
+button.addEventListener("click", (e)=>{
+  e.preventDefault()
   alert("Ali");
 })
+
+
+const frag = document.createDocumentFragment();
+const groupA = document.createElement("button"); 
+groupA.innerHTML = `
+<button > HOLY MOLY</button>`;
+frag.append(groupA);
+body.appendChild(frag)
+
+groupA.addEventListener("click", ()=>{
+  alert("HOLY MOLY")
+})
+
+let newFooterText = myFooter.firstChild.innerText + "@CiscoImages"
+myFooter.innerText =  newFooterText
 
 const form = document.querySelector(".form");
 console.log(form);
